@@ -3,4 +3,8 @@
 .equ DATA, 0x10;
 .globl entrypoint
 entrypoint:
-
+  ldxdw r0, [r1+NUM_ACCOUNTS]
+  ldxdw r2. [r1+DATA_LEN]
+  add64 r1, DATA
+  call 16
+  exit
